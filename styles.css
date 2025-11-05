@@ -40,11 +40,11 @@ header {
 }
 
 .imgClass {
-  width: 100%;
-  align-content: left;
+  float: left;
+  padding-left: 2vw;
 }
 
 .interButtons {
-  width: 7vw;
-  align-content: right;
+  float: right;
+  padding-right: 0.5vw;
 }
