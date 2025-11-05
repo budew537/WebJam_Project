@@ -1,7 +1,21 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": [],
+  "setupTasks": [
+    {
+      "command": "npm i serve",
+      "name": "npm i serve"
+    }
+  ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {}
+  "tasks": {
+    "npm run serve": {
+      "name": "npm run serve",
+      "command": "npm run serve",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    }
+  }
 }
