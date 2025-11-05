@@ -50,10 +50,5 @@ header {
   width: 60%;
 }
 
-.interButtons {
-  float: right;
-  padding-right: 1.5vw;
-  color: pink;
-  width: 30%;
-  align-items: center;
+.choiceList {
 }
