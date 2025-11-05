@@ -51,4 +51,8 @@ header {
 }
 
 .choiceList {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.6vw;
+  margin-right: 1vw;
 }

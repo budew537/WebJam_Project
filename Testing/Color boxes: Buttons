@@ -1,0 +1,80 @@
+<!-- This works to make a 2x2 grid of buttons. These buttons can be
+     pressed to change colors. Going [[1,2],[3,4]] I listed the colors need.
+     If colors reached, then the message 'HIIIIIII' is printed.
+     
+     The colors loop: lightgreen -> lightcoral -> lightblue -> gold 
+     
+
+     Things to fix:
+       -  Font sizing
+       -  Center alignment (maybe? If so refer to User Input module)
+     
+     -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #buttonContainer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 5px;
+        width: max-content;
+      }
+
+      .colorbutton {
+        background-color: lightgreen;
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="buttonContainer">
+      <button class="colorbutton" id="b1" type="button" onclick="toggleVisibility(this)"></button>
+      <button class="colorbutton" id="b2" type="button" onclick="toggleVisibility(this)"></button>
+      <button class="colorbutton" id="b3" type="button" onclick="toggleVisibility(this)"></button>
+      <button class="colorbutton" id="b4" type="button" onclick="toggleVisibility(this)"></button>
+    </div>
+    
+    <div id="messageContainer"></div>
+    <p>1:Gold <br> 2:Red <br> 3:Green <br> 4:Blue</p>
+
+    <script>
+      const buttons = document.querySelectorAll('.colorbutton');
+      buttons.forEach(button => {
+        button.style.backgroundColor = 'lightgreen';
+      });
+
+      function toggleVisibility(button) {
+        if (button.style.backgroundColor == 'lightgreen') {
+          button.style.backgroundColor = 'lightcoral'
+        } else if (button.style.backgroundColor == 'lightcoral') {
+          button.style.backgroundColor = 'lightblue'
+        } else if (button.style.backgroundColor == 'lightblue') {
+          button.style.backgroundColor = 'gold'
+        } else {
+          button.style.backgroundColor = 'lightgreen'
+        }
+        
+        const b1 = document.getElementById('b1');
+        const b2 = document.getElementById('b2');
+        const b3 = document.getElementById('b3');
+        const b4 = document.getElementById('b4');
+        
+        if (b1.style.backgroundColor == 'gold' && b2.style.backgroundColor == 'lightcoral' && b3.style.backgroundColor == 'lightgreen' && b4.style.backgroundColor == 'lightblue') {
+        const container = document.getElementById('messageContainer');
+        if (!document.getElementById('messageSent')) {
+          p = document.createElement('p');
+          p.id = 'messageSent';
+          p.innerText = 'HIIIIIII!!!!';
+          container.appendChild(p);
+        }
+      }
+    }
+    </script>
+</html>

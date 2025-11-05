@@ -1,0 +1,85 @@
+<!-- The 3x3 Grid of buttons each print out their own digit. 
+	 The code is currently '1234' which sends the message 'HIIIII!!!!"
+     
+
+     Things to fix:
+       -  Font sizing
+       
+     -->
+     
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+      
+      #answerButton {
+        width: 190px;
+        height: 40px;
+        font-size: 24px;
+      }
+      
+      #buttonContainer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+        width: max-content;
+      }
+
+      .numbutton {
+        background-color: lightgreen;
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+  	<div id="container">
+      <button width=120px height=40px id='answerButton' type='button'></button>
+  
+      <div id="buttonContainer">
+        <button class="numbutton" id="b1" type="button" onclick="pressNum(this)">1</button>
+        <button class="numbutton" id="b2" type="button" onclick="pressNum(this)">2</button>
+        <button class="numbutton" id="b3" type="button" onclick="pressNum(this)">3</button>
+        <button class="numbutton" id="b4" type="button" onclick="pressNum(this)">4</button>
+        <button class="numbutton" id="b5" type="button" onclick="pressNum(this)">5</button>
+        <button class="numbutton" id="b6" type="button" onclick="pressNum(this)">6</button>
+        <button class="numbutton" id="b7" type="button" onclick="pressNum(this)">7</button>
+        <button class="numbutton" id="b8" type="button" onclick="pressNum(this)">8</button>
+        <button class="numbutton" id="b9" type="button" onclick="pressNum(this)">9</button>
+      </div>
+      
+      <p id="code"></p>
+    </div>
+
+    <script>
+      let currentNumber = '';
+      
+      function pressNum(button) {
+        currentNumber += button.innerText;
+        if (currentNumber.length > 4) {
+          currentNumber %= 10000
+        }
+        document.getElementById('answerButton').innerText = currentNumber;
+        
+        const container = document.getElementById('code');
+        if (currentNumber == '1234') {
+          if (!document.getElementById('messageSent')) {
+          	p = document.createElement('p');
+          	p.id = 'messageSent';
+          	p.innerText = 'HIIIIIII!!!!';
+          	container.appendChild(p);
+          }
+        }
+      }
+    </script>
+</html>
