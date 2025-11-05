@@ -18,9 +18,10 @@ header {
   font-size: 2vw;
 }
 
-. navbar a {
+.navbar a {
   position: relative;
-  color: yellow;
+  color: rgb(251, 251, 128);
+  text-decoration: none;
 }
 
 .navbar a::before {
@@ -29,6 +30,11 @@ header {
   top: 100%;
   left: 0;
   width: 0;
+  height: 0.14vw;
   background: white;
   transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
 }
