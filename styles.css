@@ -54,5 +54,6 @@ header {
   position: relative;
   font-weight: 500;
   font-size: 1.6vw;
-  margin-right: 1vw;
+  /*padding-left: 50vw;
+  margin-right: 0.5vw;*/
 }
