@@ -9,8 +9,26 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5vw 5vw;
+  padding: 1.5vw 7vw;
   background: rgb(141, 222, 254);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  font-size: 2vw;
+}
+
+. navbar a {
+  position: relative;
+  color: yellow;
+}
+
+.navbar a::before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  background: white;
+  transition: 0.3s;
 }
