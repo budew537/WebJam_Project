@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5vw 5vw;
+  background: rgb(141, 222, 254);
+  display: flex;
+  justify-content: space-between;
+}
