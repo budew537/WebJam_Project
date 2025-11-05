@@ -39,10 +39,12 @@ header {
   width: 100%;
 }
 
-RoomView {
-  width: 7vw;
+.imgClass {
+  width: 100%;
+  align-content: left;
 }
 
 .interButtons {
-  width: 30%;
+  width: 7vw;
+  align-content: right;
 }
