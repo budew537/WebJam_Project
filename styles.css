@@ -47,4 +47,5 @@ header {
 .interButtons {
   float: right;
   padding-right: 0.5vw;
+  color: pink;
 }
