@@ -41,6 +41,7 @@
       <button class="colorbutton" id="b4" type="button" onclick="toggleVisibility(this)"></button>
     </div>
     
+    /* This can be changed to a hint */
     <div id="messageContainer"></div>
     <p>1:Gold <br> 2:Red <br> 3:Green <br> 4:Blue</p>
 
@@ -66,6 +67,7 @@
         const b3 = document.getElementById('b3');
         const b4 = document.getElementById('b4');
         
+        /* Change this too: for what puzzle & the code printed */
         if (b1.style.backgroundColor == 'gold' && b2.style.backgroundColor == 'lightcoral' && b3.style.backgroundColor == 'lightgreen' && b4.style.backgroundColor == 'lightblue') {
         const container = document.getElementById('messageContainer');
         if (!document.getElementById('messageSent')) {
