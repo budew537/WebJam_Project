@@ -39,6 +39,11 @@ header {
   width: 100%;
 }
 
+.description {
+  float: center;
+  width: 100%;
+}
+
 .imgClass {
   float: left;
   padding-left: 2vw;
