@@ -56,7 +56,34 @@ header {
   vertical-align: top;
   line-height: 100px;
   /*float: right;*/
-  width: 30%;
+  width: 40%;
+}
+
+.button1 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100px;
+  /*float: right;*/
+  width: 40%;
+}
+
+.button2 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100px;
+  /*float: right;*/
+  width: 40%;
+}
+
+.button3 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100px;
+  /*float: right;*/
+  width: 40%;
 }
 
 .choiceList {
