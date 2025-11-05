@@ -38,3 +38,11 @@ header {
 .navbar a:hover::before {
   width: 100%;
 }
+
+RoomView {
+  width: 7vw;
+}
+
+.interButtons {
+  width: 30%;
+}
