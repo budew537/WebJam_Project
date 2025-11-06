@@ -60,7 +60,7 @@ header {
 .title {
   padding: 1vw;
   padding-top: 4.5vw;
-  font-size: 0.9vw;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -74,6 +74,7 @@ header {
   font-size: 1.4vw;
   padding: 0.5vw;
   box-sizing: border-box;
+  margin-bottom: 0vw;
   padding-left: 1.2vw;
   border-style: dotted;
   border-width: 0.3vw;
