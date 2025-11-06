@@ -217,3 +217,20 @@ header {
   border-radius: 1vw;
   font-size: 2.9vw;
 }
+
+/*style of color boxes buttons*/
+#buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  width: max-content;
+}
+
+.colorbutton {
+  background-color: lightgreen;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}

@@ -43,6 +43,45 @@ function pressNum(button) {
   }
 }
 
+/*color boxes buttons functions*/
+const buttons = document.querySelectorAll(".colorbutton");
+buttons.forEach((button) => {
+  button.style.backgroundColor = "lightgreen";
+});
+
+function toggleVisibility(button) {
+  if (button.style.backgroundColor == "lightgreen") {
+    button.style.backgroundColor = "lightcoral";
+  } else if (button.style.backgroundColor == "lightcoral") {
+    button.style.backgroundColor = "lightblue";
+  } else if (button.style.backgroundColor == "lightblue") {
+    button.style.backgroundColor = "gold";
+  } else {
+    button.style.backgroundColor = "lightgreen";
+  }
+
+  const b1 = document.getElementById("b1");
+  const b2 = document.getElementById("b2");
+  const b3 = document.getElementById("b3");
+  const b4 = document.getElementById("b4");
+
+  /* Change this too: for what puzzle & the code printed */
+  if (
+    b1.style.backgroundColor == "gold" &&
+    b2.style.backgroundColor == "lightcoral" &&
+    b3.style.backgroundColor == "lightgreen" &&
+    b4.style.backgroundColor == "lightblue"
+  ) {
+    const container = document.getElementById("messageContainer");
+    if (!document.getElementById("messageSent")) {
+      p = document.createElement("p");
+      p.id = "messageSent";
+      p.innerText = "HIIIIIII!!!!";
+      container.appendChild(p);
+    }
+  }
+}
+
 /*hint text functions*/
 function hintLeftFunction() {
   if (index1 == 0) {
