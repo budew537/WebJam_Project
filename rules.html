@@ -4,14 +4,34 @@
     <meta charset="utf-8" />
     <title>Rules</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      #textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Escape Game Rules</h1>
-    <p><br />Look at the image and decide what the pattern is.</p>
-    <p>
-      Click on the red buttons to find clues. <br />
-      Figure out the code to win.
-    </p>
+    <header>
+      <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
+
+      <nav class="navbar">
+        <a href="index.html" class="nav1">Start Game</a>
+        <a href="rules.html" class="nav1">Rules</a>
+        <a href="walkthrough.html" class="nav1">Walkthrough</a>
+        <a href="credits.html" class="nav1">Credits</a>
+      </nav>
+    </header>
+
+    <div id="textContainer">
+      <h1 class="title" style="font-size: 5vw">Escape Game Rules</h1>
+      <p>Look at the image and decide what the pattern is.</p>
+      <p>Click on the red buttons to find clues.</p>
+      <p>Figure out the code to win.</p>
+    </div>
   </body>
 </html>
