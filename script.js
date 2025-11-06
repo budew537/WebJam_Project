@@ -1,3 +1,4 @@
+/*hint text variables*/
 var index1 = 0;
 var leftShelfOrigText =
   "The bottom part of the shelf is locked. The upper part of the shelf is full of objects. Maybe there is somewhere very noticable and special...?";
@@ -14,6 +15,7 @@ var index4 = 0;
 var frontPaperOrigText =
   "There is a piece of paper on the table. There is something on both its front and back.<br></br>I think I have found something crucial.";
 
+/*password enter var & functions*/
 let currentNumber = "";
 
 function pressNum(button) {
@@ -38,6 +40,7 @@ function pressNum(button) {
   }
 }
 
+/*hint text functions*/
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
