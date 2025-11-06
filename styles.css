@@ -96,6 +96,19 @@ header {
   padding-bottom: 5vw;
 }
 
+/*image position set-up in WIN.HTML*/
+.imgClass2 {
+  width: 100%;
+  float: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: center;
+  float: center;
+  /*margin-left: 15vw;*/
+  padding-bottom: 5vw;
+}
+
 /*button overall set-up*/
 .buttonChoiceClass {
   display: flex;
@@ -199,8 +212,8 @@ header {
 .numbutton {
   background-color: lightgreen;
   border: none;
-  width: 5vw;
-  height: 5vw;
+  width: 4.8vw;
+  height: 4.8vw;
   border-radius: 1vw;
   font-size: 2.9vw;
 }

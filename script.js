@@ -22,7 +22,8 @@ function pressNum(button) {
   if (button.innerText != "X") {
     currentNumber += button.innerText;
     if (currentNumber.length > 3) {
-      currentNumber %= 10000;
+      //currentNumber %= 1000;
+      currentNumber = "";
     }
   } else {
     currentNumber = "";
@@ -32,10 +33,12 @@ function pressNum(button) {
   const container = document.getElementById("code");
   if (currentNumber == 952) {
     if (!document.getElementById("messageSent")) {
-      p = document.createElement("p");
+      location.replace("https://hwtdtv-3000.csb.app/win");
+      /*setTimeout(location.replace("https://hwtdtv-3000.csb.app/"), 20000);*/
+      /*p = document.createElement("p");
       p.id = "messageSent";
       p.innerText = "HIIIIIII!!!!";
-      container.appendChild(p);
+      container.appendChild(p);*/
     }
   }
 }
