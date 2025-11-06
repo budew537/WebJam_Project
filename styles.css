@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/*set background color except the header part*/
+body {
+  background-color: rgb(245, 220, 210);
+}
+
 /*the top blue header position*/
 header {
   position: fixed;
