@@ -32,14 +32,25 @@
     <div id="textContainer">
       <h1 class="title" style="font-size: 2vw">Walkthrough</h1>
       <p id="hint1" style="display: none; font-size: 1.5vw">
-        Check the front drawer. The paper tells you the order of the numbers for
-        the code.
+        Check the <b>Front Drawer</b>. Then <b>Check the Paper</b>. The paper
+        tells you the <b>order of the numbers</b> for the password code.
+        <br /><br />
+        <b>1st Num: "Color Pencil" in yellow</b> -- Check the Right Table. Find
+        the corresponding color. <br /><b
+          >2nd Num: "Paper in the drawer below"</b
+        >
+        -- Check the Front Drawer. Open the drawer. <br />
+        <b>3rd Num: "Check the shelf"</b> -- Check the Left Shelf and find the
+        hint.
       </p>
 
       <div class="walk2">
         <p id="hint2" style="display: none; font-size: 1.6vw">
           <b>First Number Answer: </b><br />Check the right table and solve for
-          yellow. &radic;144 - 3 = 9. <br />So the first number is 9.
+          yellow. &radic;<span style="text-decoration: overline"
+            >&nbsp;144&nbsp;</span
+          >
+          - 3 = 9. <br />So the first number is 9.
         </p>
         <img
           src="./photos/Walkthrough-Table.png"
@@ -70,18 +81,31 @@
           height="20%"
         />
       </div>
-      <p id="hint4" style="display: none; font-size: 1.5vw">
-        Third Number Answer: Go to the shelf. You will see that there <br />
-        is an empty spot on the shelf. It is the second row, second column.
-        <br />
-        Therefore, the answer is 2.
-      </p>
+
+      <div class="walk4">
+        <p id="hint4" style="display: none; font-size: 1.5vw">
+          Third Number Answer: Go to the shelf. You will see that there <br />
+          is an empty spot on the shelf. It is the second row, second column.
+          <br />
+          Therefore, the answer is 2.
+        </p>
+        <img
+          src="./photos/Walkthrough-Shelf.png"
+          id="img4"
+          style="display: none"
+          alt="WalkthroughDrawer"
+          width="50%"
+          height="20%"
+        />
+      </div>
+
       <p id="hint5" style="display: none; font-size: 1.5vw">
         Now go back to the front drawer. Go to the password box<br />
         and insert the code 9-5-2.
       </p>
+
       <p id="hint6" style="display: none; font-size: 1.5vw">
-        The Color button hinttttt in case players don't know how to do it
+        The Color button hinttttt in case players don't know how to do it.
       </p>
 
       <!-- Button1 class for the style. Will still behave as expected. -->
@@ -112,14 +136,13 @@
 
     <style>
       #img2 {
-        float: right;
-        margin-right: 1vw;
+        float: left;
+        margin-left: 1vw;
       }
       #hint2 {
-        float: left;
-        align-items: center;
+        float: right;
         padding-top: 8vw;
-        padding-left: 1.3vw;
+        padding-right: 5vw;
       }
       #img3 {
         float: right;
@@ -129,7 +152,16 @@
         float: left;
         align-items: center;
         padding-top: 7.4vw;
-        padding-left: 1.3vw;
+        padding-left: 1.5vw;
+      }
+      #img4 {
+        float: left;
+        margin-left: 1vw;
+      }
+      #hint4 {
+        float: right;
+        padding-top: 8vw;
+        padding-right: 5vw;
       }
     </style>
   </body>
