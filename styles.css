@@ -164,7 +164,7 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5vw;
-  margin-top: 1.9vw;
+  margin-top: 0vw;
   margin-bottom: 1.2vw;
 }
 
@@ -179,28 +179,28 @@ header {
 #container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1vw;
   align-items: center;
 }
 
 #answerButton {
-  width: 190px;
-  height: 40px;
-  font-size: 24px;
+  width: 21vw;
+  height: 5vw;
+  font-size: 3vw;
 }
 
 #buttonContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 10px;
+  gap: 1vw;
   width: max-content;
 }
 
 .numbutton {
   background-color: lightgreen;
   border: none;
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
-  font-size: 24px;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 1vw;
+  font-size: 2.9vw;
 }
