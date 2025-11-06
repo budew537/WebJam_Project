@@ -14,6 +14,30 @@ var index4 = 0;
 var frontPaperOrigText =
   "There is a piece of paper on the table. There is something on both its front and back.<br></br>I think I have found something crucial.";
 
+let currentNumber = "";
+
+function pressNum(button) {
+  if (button.innerText != "X") {
+    currentNumber += button.innerText;
+    if (currentNumber.length > 3) {
+      currentNumber %= 10000;
+    }
+  } else {
+    currentNumber = "";
+  }
+  document.getElementById("answerButton").innerText = currentNumber;
+
+  const container = document.getElementById("code");
+  if (currentNumber == 952) {
+    if (!document.getElementById("messageSent")) {
+      p = document.createElement("p");
+      p.id = "messageSent";
+      p.innerText = "HIIIIIII!!!!";
+      container.appendChild(p);
+    }
+  }
+}
+
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
