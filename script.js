@@ -74,12 +74,8 @@ function toggleVisibility(button) {
   ) {
     const container = document.getElementById("messageContainer");
     if (!document.getElementById("messageSent")) {
-      /*p = document.createElement("p");
-      p.id = "messageSent";
-      p.innerText = "HIIIIIII!!!!";
-      container.appendChild(p);*/
       document.getElementById("lightPara").innerHTML =
-        "You unlocked number the '4'. Maybe you can make use of it.";
+        "Nice!! You turned on the light!! Unfortunately, nothing else happened...";
     }
   }
 }
