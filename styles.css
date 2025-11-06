@@ -60,35 +60,11 @@ header {
   background-color: brown;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1.3vw 4.5vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-}
-
-.button2 {
-  background-color: brown;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 3vw;
-}
-
-.button3 {
-  background-color: brown;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 3vw;
+  font-size: 1vw;
+  margin-top: 2.7vw;
+  margin-bottom: 1.3vw;
 }
