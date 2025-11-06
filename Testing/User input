@@ -72,7 +72,7 @@
         document.getElementById('answerButton').innerText = currentNumber;
         
         const container = document.getElementById('code');
-        if (currentNumber == '1234') {
+        if (currentNumber == 1234) {
           if (!document.getElementById('messageSent')) {
           	p = document.createElement('p');
           	p.id = 'messageSent';
