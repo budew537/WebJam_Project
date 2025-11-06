@@ -20,23 +20,12 @@ header {
 
 .navbar a {
   position: relative;
-  color: rgb(246, 246, 66);
+  color: white;
   text-decoration: none;
 }
 
-.navbar a::before {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0.14vw;
-  background: white;
-  transition: 0.3s;
-}
-
-.navbar a:hover::before {
-  width: 100%;
+.navbar a:hover {
+  color: rgb(246, 246, 66);
 }
 
 .logo {
