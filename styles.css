@@ -10,7 +10,7 @@ header {
   left: 0;
   width: 100%;
   padding: 1.5vw 7vw;
-  background: rgb(141, 222, 254);
+  background: rgb(2, 117, 162);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ header {
 
 .navbar a {
   position: relative;
-  color: rgb(251, 251, 128);
+  color: rgb(246, 246, 66);
   text-decoration: none;
 }
 
@@ -37,6 +37,16 @@ header {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+.logo {
+  color: aqua;
+  text-decoration: none;
+}
+
+.nav1 {
+  padding: 1vw;
+  padding-bottom: 0vw;
 }
 
 .description {
