@@ -10,6 +10,10 @@ var index3 = 0;
 var frontDrawerOrigText =
   "There are 2 pieces of paper lying in the drawer. What do they mean......?";
 
+var index4 = 0;
+var frontPaperOrigText =
+  "There is a piece of paper on the table. There is something on both its front and back.<br></br>I think I have found something crucial.";
+
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
@@ -43,8 +47,21 @@ function hintOpenDrawerFunction() {
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hide Hint";
     index3++;
   } else if (index3 == 1) {
-    document.getElementById("openDrawerPara").innerHTML = frontDrawerOrigText;
+    document.getElementById("openDrawerPara").innerHTML = frontPaperOrigText;
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hint";
     index3--;
+  }
+}
+
+function hintPaperFunction() {
+  if (index4 == 0) {
+    document.getElementById("paperPara").innerHTML =
+      "I should check out the places and objects that are listed on this paper.";
+    document.getElementById("hintPaperButton").innerHTML = "Hide Hint";
+    index4++;
+  } else if (index4 == 1) {
+    document.getElementById("paperPara").innerHTML = frontPaperOrigText;
+    document.getElementById("hintPaperButton").innerHTML = "Hint";
+    index4--;
   }
 }
