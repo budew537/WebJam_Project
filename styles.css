@@ -64,7 +64,13 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1vw;
-  margin-top: 2.7vw;
-  margin-bottom: 1.3vw;
+  font-size: 1.5vw;
+  margin-top: 1.9vw;
+  margin-bottom: 1.7vw;
+}
+
+.button1:hover {
+  background-color: rgb(207, 60, 109);
+  color: aliceblue;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
