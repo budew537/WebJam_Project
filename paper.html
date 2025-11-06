@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <!--Refers to the title in the weblink-->
+    <title>EscapeRoomProject-WebJam2025</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <header>
+    <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
+
+    <nav class="navbar">
+      <a href="index.html" class="nav1">Start Game</a>
+      <a href="rules.html" class="nav1">Rules</a>
+      <a href="walkthrough.html" class="nav1">Walkthrough</a>
+      <a href="credits.html" class="nav1">Credits</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="title">
+      <h1>Instruction Paper</h1>
+    </div>
+
+    <div class="description">
+      <p class="descript-paragraph" id="paperPara">
+        There is a piece of paper on the table. There is something on both its front and back.<br></br>I think I have found something crucial.
+      </p>
+    </div>
+
+    <div class="interactClass">
+      <div class="imgClass">
+        <img
+          src="./photos/HintPaper.png"
+          alt="RoomView"
+          width="100%"
+          height="20%"
+        />
+      </div>
+
+      <div class="buttonChoiceClass">
+        <a href="front.html" class="button2"> Go back to the Front Drawer </a>
+        <button
+          class="button2"
+          id="hintPaperButton"
+          onclick="hintPaperFunction();"
+        >
+          Hint
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

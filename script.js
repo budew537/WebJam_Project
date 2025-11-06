@@ -6,6 +6,10 @@ var index2 = 0;
 var rightTableOrigText =
   "There are some color pencils and a piece of old paper on the table.";
 
+var index3 = 0;
+var frontDrawerOrigText =
+  "There are 2 pieces of paper lying in the drawer. What do they mean......?";
+
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
@@ -29,5 +33,18 @@ function hintRightFunction() {
     document.getElementById("rightPara").innerHTML = rightTableOrigText;
     document.getElementById("hintRightButton").innerHTML = "Hint";
     index2--;
+  }
+}
+
+function hintOpenDrawerFunction() {
+  if (index3 == 0) {
+    document.getElementById("openDrawerPara").innerHTML =
+      "Perhaps...try connecting the numbers on the left-handside paper in the order right-handside paper.";
+    document.getElementById("hintOpenDrawerButton").innerHTML = "Hide Hint";
+    index3++;
+  } else if (index3 == 1) {
+    document.getElementById("openDrawerPara").innerHTML = frontDrawerOrigText;
+    document.getElementById("hintOpenDrawerButton").innerHTML = "Hint";
+    index3--;
   }
 }
