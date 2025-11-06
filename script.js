@@ -1,3 +1,15 @@
+var index = 0;
+var leftShelfOrigText = document.getElementById("leftPara").innerHTML;
+System.out.print(leftShelfOrigText);
+
 function hintLeftFunction() {
-  document.getElementById("leftPara").innerHTML = "what is11111111111";
+  if (index == 0) {
+    document.getElementById("leftPara").innerHTML = "what is11111111111";
+    document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
+    index++;
+  } else if (index == 1) {
+    document.getElementById("leftPara").innerHTML = leftShelfOrigText;
+    document.getElementById("hintLeftButton").innerHTML = "Hint";
+    index--;
+  }
 }
