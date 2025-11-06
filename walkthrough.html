@@ -3,6 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <title>Walkthrough</title>
-    <link rel="stylesheet" href="".styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
+  <body>
+    <h1>Walkthrough</h1>
+    <p id="hint1" style="display: none">
+      Check the front drawer. The paper tells you the order <br />of the numbers
+      for the code.
+    </p>
+    <p id="hint2" style="display: none">
+      First Number Answer: Check the right table and solve for yellow.
+      <br />&radic;144 - 3 = 9. So the first number is 9.
+    </p>
+    <p id="hint3" style="display: none">
+      Second Number Answer: Go back to the front Drawer. You can <br />open the
+      drawer. Inside, you see two sheets of paper. Follow the right
+      <br />paper's instructions. If you trace it out, you will get the number
+      5.
+    </p>
+    <p id="hint4" style="display: none">
+      Third Number Answer: Go to the shelf. You will see that there <br />
+      is an empty spot on the shelf. It is the second row, second column. <br />
+      Therefore, the answer is 2.
+    </p>
+    <p id="hint5" style="display: none">
+      Now go back to the front drawer. Go to the password box<br />
+      and insert the code 9-5-2.
+      <br /><br />Congrats! You won the game!!
+    </p>
+
+    <button id="b1" type="button" onclick="showAnswer(this)">Get clue!!</button>
+
+    <div class="buttonChoiceClass">
+      <a href="index.html" class="button2"> Go back to view the Entire Room </a>
+    </div>
+
+    <script>
+      let hintNum = 1;
+      function showAnswer(button) {
+        document.getElementById("hint" + hintNum).style.display = "block";
+        hintNum++;
+        if (hintNum >= 6) {
+          document.getElementById("b1").style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
