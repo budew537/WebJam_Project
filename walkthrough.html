@@ -35,10 +35,21 @@
         Check the front drawer. The paper tells you the order of the numbers for
         the code.
       </p>
-      <p id="hint2" style="display: none; font-size: 1.5vw">
-        First Number Answer: Check the right table and solve for yellow.
-        <br />&radic;144 - 3 = 9. So the first number is 9.
-      </p>
+
+      <div class="walk2">
+        <p id="hint2" style="display: none; font-size: 1.6vw">
+          <b>First Number Answer: </b><br />Check the right table and solve for
+          yellow. &radic;144 - 3 = 9. <br />So the first number is 9.
+        </p>
+        <img
+          src="./photos/Walkthrough-Table.png"
+          id="img2"
+          style="display: none"
+          alt="WalkthroughTable"
+          width="50%"
+          height="20%"
+        />
+      </div>
 
       <div class="walk3">
         <p id="hint3" style="display: none; font-size: 1.6vw">
@@ -89,7 +100,7 @@
       let hintNum = 1;
       function showAnswer(button) {
         document.getElementById("hint" + hintNum).style.display = "block";
-        if (hintNum == 3) {
+        if (hintNum > 1) {
           document.getElementById("img" + hintNum).style.display = "block";
         }
         hintNum++;
@@ -100,6 +111,16 @@
     </script>
 
     <style>
+      #img2 {
+        float: right;
+        margin-right: 1vw;
+      }
+      #hint2 {
+        float: left;
+        align-items: center;
+        padding-top: 8vw;
+        padding-left: 1.3vw;
+      }
       #img3 {
         float: right;
         margin-right: 1vw;
