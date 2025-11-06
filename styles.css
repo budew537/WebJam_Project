@@ -108,6 +108,7 @@ header {
   display: inline-block;
   font-size: 1.5vw;
   margin-top: 1.9vw;
+  margin-bottom: 1.2vw;
 }
 
 /*button on index.html page setup, after hover*/
@@ -127,7 +128,8 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5vw;
-  margin-top: 1.9vw;
+  margin-top: 6.5vw;
+  margin-bottom: 2.3vw;
 }
 
 /*button on left.html page setup, after hover*/

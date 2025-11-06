@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  
   <head>
     <meta charset="utf-8" />
     <title>EscapeRoomProject-WebJam2025</title>
     <!--Refers to the title in the weblink-->
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
   </head>
 
   <header>
@@ -24,7 +26,7 @@
       </div>
   
       <div class="description">
-        <p class="descript-paragraph">11111</p>
+        <p class="descript-paragraph" id="leftPara">The bottom part of the shelf is locked. The upper part of the shelf is full of objects. Maybe there is somewhere very noticable and special...?</p>
       </div>
   
       <br></br>
@@ -37,7 +39,7 @@
           Go back to view the Entire Room
         </a>
 
-        <button class="button2" id="hintLeftButton">
+        <button class="button2" id="hintLeftButton" onclick="hintLeftFunction();">
           Hint
         </button>
         
