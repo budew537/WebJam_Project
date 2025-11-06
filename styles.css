@@ -115,3 +115,16 @@ header {
   color: aliceblue;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
+
+/*button on index.html page setup*/
+.button2 {
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 1.3vw 4.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  margin-top: 1.9vw;
+}
