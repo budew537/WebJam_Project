@@ -47,7 +47,7 @@ function hintOpenDrawerFunction() {
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hide Hint";
     index3++;
   } else if (index3 == 1) {
-    document.getElementById("openDrawerPara").innerHTML = frontPaperOrigText;
+    document.getElementById("openDrawerPara").innerHTML = frontDrawerOrigText;
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hint";
     index3--;
   }
