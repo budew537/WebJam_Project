@@ -4,7 +4,8 @@ var leftShelfOrigText =
 
 function hintLeftFunction() {
   if (index == 0) {
-    document.getElementById("leftPara").innerHTML = "11111111111111.";
+    document.getElementById("leftPara").innerHTML =
+      "Emmmm....Is there something special about the position of the empty spot in the shelf?";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
     index++;
   } else if (index == 1) {
