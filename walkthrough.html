@@ -6,17 +6,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
 
-    <header>
-      <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
-
-      <nav class="navbar">
-        <a href="index.html" class="nav1">Start Game</a>
-        <a href="rules.html" class="nav1">Rules</a>
-        <a href="walkthrough.html" class="nav1">Walkthrough</a>
-        <a href="credits.html" class="nav1">Credits</a>
-      </nav>
-    </header>
-
     <style>
       #textContainer {
         display: flex;
@@ -28,9 +17,19 @@
   </head>
 
   <body>
-    <div id="textContainer">
-      <h1>Walkthrough</h1>
+    <header>
+      <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
 
+      <nav class="navbar">
+        <a href="index.html" class="nav1">Start Game</a>
+        <a href="rules.html" class="nav1">Rules</a>
+        <a href="walkthrough.html" class="nav1">Walkthrough</a>
+        <a href="credits.html" class="nav1">Credits</a>
+      </nav>
+    </header>
+
+    <div id="textContainer">
+      <h1 class="title">Walkthrough</h1>
       <p id="hint1" style="display: none">
         Check the front drawer. The paper tells you the order <br />of the
         numbers for the code.
@@ -55,7 +54,6 @@
         Now go back to the front drawer. Go to the password box<br />
         and insert the code 9-5-2.
       </p>
-      </div>
 
       <!-- Button1 class for the style. Will still behave as expected. -->
       <button id="b1" class="button1" type="button" onclick="showAnswer(this)">
