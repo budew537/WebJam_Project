@@ -8,6 +8,7 @@
 /*set background color except the header part*/
 body {
   background-color: rgb(245, 220, 210);
+  padding-bottom: 5vw;
 }
 
 /*the top blue header position*/
@@ -84,6 +85,7 @@ header {
   float: left;
   padding-left: 1vw;
   width: 60%;
+  padding-bottom: 5vw;
 }
 
 /*button overall set-up*/
@@ -105,7 +107,6 @@ header {
   display: inline-block;
   font-size: 1.5vw;
   margin-top: 1.9vw;
-  margin-bottom: 1.7vw;
 }
 
 /*button on index.html page setup, after hover*/
