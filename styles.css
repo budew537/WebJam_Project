@@ -49,9 +49,19 @@ header {
   padding-bottom: 0vw;
 }
 
+.title {
+  padding: 1vw;
+  padding-top: 6vw;
+  font-size: 1.4vw;
+  text-align: center;
+}
+
 .description {
-  float: center;
   width: 100%;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  border: black;
 }
 
 .imgClass {
