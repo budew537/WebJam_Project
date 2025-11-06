@@ -222,15 +222,22 @@ header {
 #buttonContainer {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 5px;
+  gap: 0.5vw;
   width: max-content;
+
+  float: center;
+  width: 100%;
+  float: center;
+  align-items: center;
+  justify-content: center;
+  position: center;
 }
 
 .colorbutton {
   background-color: lightgreen;
   border: none;
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 0.5vw;
   transition: background-color 0.3s ease;
 }

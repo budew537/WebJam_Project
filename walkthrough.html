@@ -4,39 +4,69 @@
     <meta charset="utf-8" />
     <title>Walkthrough</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+
+    <header>
+      <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
+
+      <nav class="navbar">
+        <a href="index.html" class="nav1">Start Game</a>
+        <a href="rules.html" class="nav1">Rules</a>
+        <a href="walkthrough.html" class="nav1">Walkthrough</a>
+        <a href="credits.html" class="nav1">Credits</a>
+      </nav>
+    </header>
+
+    <style>
+      #textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Walkthrough</h1>
-    <p id="hint1" style="display: none">
-      Check the front drawer. The paper tells you the order <br />of the numbers
-      for the code.
-    </p>
-    <p id="hint2" style="display: none">
-      First Number Answer: Check the right table and solve for yellow.
-      <br />&radic;144 - 3 = 9. So the first number is 9.
-    </p>
-    <p id="hint3" style="display: none">
-      Second Number Answer: Go back to the front Drawer. You can <br />open the
-      drawer. Inside, you see two sheets of paper. Follow the right
-      <br />paper's instructions. If you trace it out, you will get the number
-      5.
-    </p>
-    <p id="hint4" style="display: none">
-      Third Number Answer: Go to the shelf. You will see that there <br />
-      is an empty spot on the shelf. It is the second row, second column. <br />
-      Therefore, the answer is 2.
-    </p>
-    <p id="hint5" style="display: none">
-      Now go back to the front drawer. Go to the password box<br />
-      and insert the code 9-5-2.
-      <br /><br />Congrats! You won the game!!
-    </p>
+    <div id="textContainer">
+      <h1>Walkthrough</h1>
 
-    <button id="b1" type="button" onclick="showAnswer(this)">Get clue!!</button>
+      <p id="hint1" style="display: none">
+        Check the front drawer. The paper tells you the order <br />of the
+        numbers for the code.
+      </p>
+      <p id="hint2" style="display: none">
+        First Number Answer: Check the right table and solve for yellow.
+        <br />&radic;144 - 3 = 9. So the first number is 9.
+      </p>
+      <p id="hint3" style="display: none">
+        Second Number Answer: Go back to the front Drawer. You can <br />open
+        the drawer. Inside, you see two sheets of paper. Follow the right
+        <br />paper's instructions. If you trace it out, you will get the number
+        5.
+      </p>
+      <p id="hint4" style="display: none">
+        Third Number Answer: Go to the shelf. You will see that there <br />
+        is an empty spot on the shelf. It is the second row, second column.
+        <br />
+        Therefore, the answer is 2.
+      </p>
+      <p id="hint5" style="display: none">
+        Now go back to the front drawer. Go to the password box<br />
+        and insert the code 9-5-2.
+      </p>
+      </div>
 
-    <div class="buttonChoiceClass">
-      <a href="index.html" class="button2"> Go back to view the Entire Room </a>
+      <!-- Button1 class for the style. Will still behave as expected. -->
+      <button id="b1" class="button1" type="button" onclick="showAnswer(this)">
+        Get Hint!!
+      </button>
+
+      <div class="buttonChoiceClass">
+        <a href="index.html" class="button2">
+          Go back to view the Entire Room
+        </a>
+      </div>
     </div>
 
     <script>
