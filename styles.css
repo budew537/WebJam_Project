@@ -104,7 +104,7 @@ header {
   padding-bottom: 5vw;
 }
 
-/*button on index.html page setup*/
+/*4 button on index.html page setup*/
 .button1 {
   background-color: brown;
   border: none;
@@ -125,7 +125,7 @@ header {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
-/*button on left.html page setup*/
+/*2 button on left.html page setup*/
 .button2 {
   background-color: brown;
   border: none;

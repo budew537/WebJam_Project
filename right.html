@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <!--Refers to the title in the weblink-->
+    <title>EscapeRoomProject-WebJam2025</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <header>
+    <a href="index.html" class="logo"><b>The PSK Escape Room</b></a>
+
+    <nav class="navbar">
+      <a href="index.html" class="nav1">Start Game</a>
+      <a href="rules.html" class="nav1">Rules</a>
+      <a href="walkthrough.html" class="nav1">Walkthrough</a>
+      <a href="credits.html" class="nav1">Credits</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="title">
+      <h1>Right Table</h1>
+    </div>
+
+    <div class="description">
+      <p class="descript-paragraph" id="rightPara">
+        There are some color pencils and a piece of old paper on the table.
+        <br></br>(Delete this part if no extra game: There is also a strange orange
+        button on the side of the table.)
+      </p>
+    </div>
+
+    <div class="interactClass">
+      <div class="imgClass">
+        <img
+          src="./photos/RightTable-v2.png"
+          alt="RoomView"
+          width="100%"
+          height="20%"
+        />
+      </div>
+
+      <div class="buttonChoiceClass">
+        <a href="index.html" class="button2">
+          Go back to view the Entire Room
+        </a>
+        <button
+          class="button2"
+          id="hintRightButton"
+          onclick="hintRightFunction();"
+        >
+          Hint
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
