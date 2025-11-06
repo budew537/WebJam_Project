@@ -58,38 +58,3 @@ header {
   float: right;
   width: 40%;
 }
-
-.button1 {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
-  /*float: right;*/
-  width: 40%;
-}
-
-.button2 {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  line-height: 100px;
-  /*float: right;*/
-  width: 40%;
-}
-
-.button3 {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  line-height: 100px;
-  /*float: right;*/
-  width: 40%;
-}
-
-.choiceList {
-  position: relative;
-  justify-content: center;
-  display: grid;
-  font-weight: 500;
-  font-size: 1.6vw;
-}

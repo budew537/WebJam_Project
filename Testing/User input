@@ -1,5 +1,5 @@
 <!-- The 3x3 Grid of buttons each print out their own digit. 
-	 The code is currently '1234' which sends the message 'HIIIII!!!!"
+	 The code is currently '952' which sends the message 'HIIIII!!!!"
      
 
      Things to fix:
@@ -58,6 +58,7 @@
         <button class="numbutton" id="b9" type="button" onclick="pressNum(this)">9</button>
       </div>
       
+      <button class="numbutton" id="b10" type="button" onclick="pressNum(this)">X</button>
       <p id="code"></p>
     </div>
 
@@ -65,14 +66,19 @@
       let currentNumber = '';
       
       function pressNum(button) {
-        currentNumber += button.innerText;
-        if (currentNumber.length > 4) {
-          currentNumber %= 10000
+        if (button.innerText != 'X') {
+          currentNumber += button.innerText;
+          if (currentNumber.length > 3) {
+            currentNumber %= 10000
+          }
+        }
+        else {
+          currentNumber = ''
         }
         document.getElementById('answerButton').innerText = currentNumber;
         
         const container = document.getElementById('code');
-        if (currentNumber == 1234) {
+        if (currentNumber == 952) {
           if (!document.getElementById('messageSent')) {
           	p = document.createElement('p');
           	p.id = 'messageSent';
