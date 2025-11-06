@@ -3,6 +3,7 @@
   margin: 1px;
   padding: 1px;
   box-sizing: border-box;
+  font-family: Times New Roman;
 }
 
 /*set background color except the header part*/
@@ -116,7 +117,7 @@ header {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
-/*button on index.html page setup*/
+/*button on left.html page setup*/
 .button2 {
   background-color: brown;
   border: none;
@@ -127,4 +128,11 @@ header {
   display: inline-block;
   font-size: 1.5vw;
   margin-top: 1.9vw;
+}
+
+/*button on left.html page setup, after hover*/
+.button2:hover {
+  background-color: rgb(207, 60, 109);
+  color: aliceblue;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
