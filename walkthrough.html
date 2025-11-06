@@ -39,12 +39,26 @@
         First Number Answer: Check the right table and solve for yellow.
         <br />&radic;144 - 3 = 9. So the first number is 9.
       </p>
-      <p id="hint3" style="display: none; font-size: 1.5vw">
-        Second Number Answer: Go back to the front Drawer. You can <br />open
-        the drawer. Inside, you see two sheets of paper. Follow the right
-        <br />paper's instructions. If you trace it out, you will get the number
-        5.
-      </p>
+
+      <div class="walk3">
+        <p id="hint3" style="display: none; font-size: 1.6vw">
+          <b>Second Number Answer:</b><br />
+          Go to the "Front Drawer". You can open the drawer. Inside, <br />
+          you see two sheets of paper. Follow the right paper's instructions.
+          <br /><br />
+          If you trace out the order of the numbers/letters on the left paper,
+          <br />
+          you will get the number 5.
+        </p>
+        <img
+          src="./photos/Walkthrough-drawer.png"
+          id="img3"
+          style="display: none"
+          alt="WalkthroughDrawer"
+          width="50%"
+          height="20%"
+        />
+      </div>
       <p id="hint4" style="display: none; font-size: 1.5vw">
         Third Number Answer: Go to the shelf. You will see that there <br />
         is an empty spot on the shelf. It is the second row, second column.
@@ -75,11 +89,27 @@
       let hintNum = 1;
       function showAnswer(button) {
         document.getElementById("hint" + hintNum).style.display = "block";
+        if (hintNum == 3) {
+          document.getElementById("img" + hintNum).style.display = "block";
+        }
         hintNum++;
         if (hintNum >= 6) {
           document.getElementById("b1").style.display = "none";
         }
       }
     </script>
+
+    <style>
+      #img3 {
+        float: right;
+        margin-right: 1vw;
+      }
+      #hint3 {
+        float: left;
+        align-items: center;
+        padding-top: 7.4vw;
+        padding-left: 1.3vw;
+      }
+    </style>
   </body>
 </html>
