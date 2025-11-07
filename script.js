@@ -13,7 +13,7 @@ var frontDrawerOrigText =
 
 var index4 = 0;
 var frontPaperOrigText =
-  "There is a piece of paper on the table. There is something on both its front and back.<br></br>I think I have found something crucial.";
+  "There is a piece of paper on the table. There is something on both its front and back.";
 
 /*password enter var & functions*/
 let currentNumber = "";
@@ -82,7 +82,7 @@ function toggleVisibility(button) {
       /* document.getElementById("lightPara").style.fontWeight = "bold"; */
 
       document.getElementById("lightPara").innerHTML =
-        "Nice!! You turned on the light!! You get the secret number'666'.";
+        "Nice!! You turned on the light!! You get the secret number '666666'.";
     }
   }
 }
@@ -91,7 +91,7 @@ function toggleVisibility(button) {
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
-      "Hmmmm....Is there something special about the position of the empty spot in the shelf?";
+      "Hmmmm....Is there something special about the position of the empty spot in the shelf?\nTry mapping it in a coordinate from top to bottom and from left to right.";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
     /*document.getElementById("leftPara").style.color = "#085570";*/
     document.getElementById("leftPara").style.fontWeight = "bold";
@@ -143,3 +143,4 @@ function hintPaperFunction() {
     index4--;
   }
 }
+5;
