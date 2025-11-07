@@ -110,10 +110,12 @@ function hintRightFunction() {
     document.getElementById("rightPara").innerHTML =
       "Maybe all the colors refer to some number...? I should check out the paper on the front drawer.";
     document.getElementById("hintRightButton").innerHTML = "Hide Hint";
+    document.getElementById("rightPara").style.fontWeight = "bold";
     index2++;
   } else if (index2 == 1) {
     document.getElementById("rightPara").innerHTML = rightTableOrigText;
     document.getElementById("hintRightButton").innerHTML = "Hint";
+    document.getElementById("rightPara").style.fontWeight = "normal";
     index2--;
   }
 }
@@ -123,10 +125,12 @@ function hintOpenDrawerFunction() {
     document.getElementById("openDrawerPara").innerHTML =
       "Perhaps...try connecting the numbers on the left-handside paper in the order right-handside paper.";
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hide Hint";
+    document.getElementById("openDrawerPara").style.fontWeight = "bold";
     index3++;
   } else if (index3 == 1) {
     document.getElementById("openDrawerPara").innerHTML = frontDrawerOrigText;
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hint";
+    document.getElementById("openDrawerPara").style.fontWeight = "normal";
     index3--;
   }
 }
@@ -136,10 +140,12 @@ function hintPaperFunction() {
     document.getElementById("paperPara").innerHTML =
       "I should check out the places and objects that are listed on this paper.";
     document.getElementById("hintPaperButton").innerHTML = "Hide Hint";
+    document.getElementById("paperPara").style.fontWeight = "bold";
     index4++;
   } else if (index4 == 1) {
     document.getElementById("paperPara").innerHTML = frontPaperOrigText;
     document.getElementById("hintPaperButton").innerHTML = "Hint";
+    document.getElementById("paperPara").style.fontWeight = "normal";
     index4--;
   }
 }
