@@ -90,7 +90,7 @@ function toggleVisibility(button) {
         document.body.style.backgroundColor = "#ccf0fe";
         document.getElementById("lightPara").innerHTML =
           "You get the secret number '666666'. Giving you blessings!";
-      }, 2500);
+      }, 2100);
     }
   }
 }
