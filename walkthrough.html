@@ -84,9 +84,9 @@
 
       <div class="walk4">
         <p id="hint4" style="display: none; font-size: 1.5vw">
-          Third Number Answer: Go to the shelf. You will see that there <br />
-          is an empty spot on the shelf. It is the second row, second column.
-          <br />
+          <b>Third Number Answer:</b> <br />Go to the shelf. You will see that
+          there is an empty spot on the shelf. <br />It is the second row,
+          second column, coodordinate (2,2). <br /><br />
           Therefore, the answer is 2.
         </p>
         <img
@@ -100,12 +100,14 @@
       </div>
 
       <p id="hint5" style="display: none; font-size: 1.5vw">
-        Now go back to the front drawer. Go to the password box<br />
-        and insert the code 9-5-2.
+        <b>Unlock the Password Box</b><br />
+        Now go back to the front drawer. Go to the Password Box.<br />
+        Click on the numbers on the screen in the order of 9-5-2.
       </p>
 
       <p id="hint6" style="display: none; font-size: 1.5vw">
-        The Color button hinttttt in case players don't know how to do it.
+        <b>Bonus Color Box Solution</b><br />
+        Go the Entire Room View. Check the Light on the Wall.
       </p>
 
       <!-- Button1 class for the style. Will still behave as expected. -->
@@ -124,11 +126,11 @@
       let hintNum = 1;
       function showAnswer(button) {
         document.getElementById("hint" + hintNum).style.display = "block";
-        if (hintNum > 1) {
+        if (hintNum > 1 && hintNum < 5) {
           document.getElementById("img" + hintNum).style.display = "block";
         }
         hintNum++;
-        if (hintNum >= 6) {
+        if (hintNum >= 7) {
           document.getElementById("b1").style.display = "none";
         }
       }
@@ -152,7 +154,7 @@
         float: left;
         align-items: center;
         padding-top: 7.4vw;
-        padding-left: 1.5vw;
+        padding-left: 1.6vw;
       }
       #img4 {
         float: left;
@@ -161,7 +163,7 @@
       #hint4 {
         float: right;
         padding-top: 8vw;
-        padding-right: 5vw;
+        padding-right: 4.6vw;
       }
     </style>
   </body>
