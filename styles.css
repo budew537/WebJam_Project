@@ -82,7 +82,7 @@ header {
   border-width: 0.3vw;
   border-color: #0275a2;
   border-radius: 1vw;
-  background-color: rgb(238, 238, 238, 0.6);
+  background-color: rgb(238, 238, 238, 0.7);
 }
 
 /*set position of image and buttons from the game description
@@ -181,7 +181,7 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5vw;
-  margin-top: 0.5vw;
+  margin-top: 1vw;
   margin-bottom: 1.2vw;
   border-radius: 5vw;
 }
