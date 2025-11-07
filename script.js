@@ -91,7 +91,7 @@ function toggleVisibility(button) {
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
-      "The empty spot seems to be the speical one. Try mapping that spot in a coordinate in the shelf <br/>from top to bottom (1 to 4)and from left to right (1 to 4) and see where it locates.";
+      "The empty spot seems to be the speical one. Try mapping that spot in a coordinate in the shelf <br/>from top to bottom (1 to 4) and from left to right (1 to 4) and see where it locates.";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
     /*document.getElementById("leftPara").style.color = "#085570";*/
     document.getElementById("leftPara").style.fontWeight = "bold";
