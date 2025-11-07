@@ -82,7 +82,7 @@ function toggleVisibility(button) {
       /* document.getElementById("lightPara").style.fontWeight = "bold"; */
 
       document.getElementById("lightPara").innerHTML =
-        "Nice!! You turned on the light!! You get the secret number'4'.";
+        "Nice!! You turned on the light!! You get the secret number'666'.";
     }
   }
 }
