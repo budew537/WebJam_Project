@@ -74,6 +74,13 @@ function toggleVisibility(button) {
   ) {
     const container = document.getElementById("messageContainer");
     if (!document.getElementById("messageSent")) {
+      document.getElementById("lighthint1").style.display = "none";
+      document.getElementById("lighthint2").style.display = "none";
+      document.getElementById("lighthint3").style.display = "none";
+      document.getElementById("lighthint4").style.display = "none";
+
+      /* document.getElementById("lightPara").style.fontWeight = "bold"; */
+
       document.getElementById("lightPara").innerHTML =
         "Nice!! You turned on the light!! Unfortunately, nothing else happened...";
     }
@@ -84,12 +91,16 @@ function toggleVisibility(button) {
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
-      "Emmmm....Is there something special about the position of the empty spot in the shelf?";
+      "Hmmmm....Is there something special about the position of the empty spot in the shelf?";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
+    document.getElementById("leftPara").style.color = "blue";
+    document.getElementById("leftPara").style.fontWeight = "bold";
     index1++;
   } else if (index1 == 1) {
     document.getElementById("leftPara").innerHTML = leftShelfOrigText;
     document.getElementById("hintLeftButton").innerHTML = "Hint";
+    document.getElementById("leftPara").style.color = "black";
+    document.getElementById("leftPara").style.fontWeight = "unbold";
     index1--;
   }
 }

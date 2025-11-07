@@ -8,7 +8,7 @@
 
 /*set background color except the header part*/
 body {
-  background-color: #f6f2b7;
+  background-color: #f1ea8e;
   padding-bottom: 5vw;
 }
 
@@ -36,7 +36,7 @@ header {
 
 /*the links on the header, after hover*/
 .navbar a:hover {
-  color: #ffe603;
+  color: #ffde21;
 }
 
 /*the links on the header, set space in between*/
@@ -129,6 +129,7 @@ header {
   font-size: 1.5vw;
   margin-top: 1.9vw;
   margin-bottom: 1.2vw;
+  border-radius: 5vw;
 }
 
 /*button on index.html page setup, after hover*/
@@ -150,6 +151,7 @@ header {
   font-size: 1.5vw;
   margin-top: 6.5vw;
   margin-bottom: 2.3vw;
+  border-radius: 5vw;
 }
 
 /*button on left.html page setup, after hover*/
@@ -179,6 +181,7 @@ header {
   font-size: 1.5vw;
   margin-top: 1vw;
   margin-bottom: 1.2vw;
+  border-radius: 5vw;
 }
 
 /*1 button on password.html page setup, after hover*/
