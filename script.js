@@ -116,7 +116,7 @@ function hintLeftFunction() {
 function hintRightFunction() {
   if (index2 == 0) {
     document.getElementById("rightPara").innerHTML =
-      "Maybe all the colors refer to some number...? I should check out the paper in the Front Drawer to see which number I need.";
+      "Maybe all the colors refer to some number? I don't need to calculate everything. I should check out the paper in the Front Drawer to see which number I need.";
     document.getElementById("hintRightButton").innerHTML = "Hide Hint";
     document.getElementById("rightPara").style.fontWeight = "bold";
     index2++;
