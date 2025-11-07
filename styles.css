@@ -8,7 +8,7 @@
 
 /*set background color except the header part*/
 body {
-  background-color: rgb(200, 246, 183);
+  background-color: #f6f2b7;
   padding-bottom: 5vw;
 }
 
@@ -19,7 +19,7 @@ header {
   left: 0;
   width: 100%;
   padding: 1.1vw 6.4vw;
-  background: rgb(2, 162, 77);
+  background: #0275a2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ header {
 
 /*the links on the header, after hover*/
 .navbar a:hover {
-  color: rgb(255, 230, 3);
+  color: #ffe603;
 }
 
 /*the links on the header, set space in between*/
@@ -53,7 +53,7 @@ header {
 
 /*the left logo link on the header, after hover*/
 .logo:hover {
-  color: rgb(246, 108, 38);
+  color: #ffde21;
 }
 
 /*The Big title of current Page*/
@@ -79,7 +79,7 @@ header {
   padding-left: 1.2vw;
   border-style: dotted;
   border-width: 0.3vw;
-  border-color: red;
+  border-color: #0275a2;
   border-radius: 1vw;
 }
 
