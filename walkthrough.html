@@ -102,13 +102,28 @@
       <p id="hint5" style="display: none; font-size: 1.5vw">
         <b>Unlock the Password Box</b><br />
         Now go back to the front drawer. Go to the Password Box.<br />
-        Click on the numbers on the screen in the order of 9-5-2.
+        Click on the numbers on the screen in the order of 9-5-2.<br />
       </p>
 
-      <p id="hint6" style="display: none; font-size: 1.5vw">
-        <b>Bonus Color Box Solution</b><br />
-        Go the Entire Room View. Check the Light on the Wall.
-      </p>
+      <div class="walk6">
+        <p id="hint6" style="display: none; font-size: 1.5vw">
+          <b>Bonus Color Box Solution</b><br />
+          Go the Entire Room View. Check the Light on the Wall.
+
+          <br /><br />Reorder the word hints into color words. Then try clicking
+          on the <br />4 green buttons. <br /><br />
+          Click them to change color and match the color description in the
+          <br />word hints.
+        </p>
+        <img
+          src="./photos/Walkthrough-Light.png"
+          id="img6"
+          style="display: none"
+          alt="WalkthroughDrawer"
+          width="50%"
+          height="20%"
+        />
+      </div>
 
       <!-- Button1 class for the style. Will still behave as expected. -->
       <button id="b1" class="button3" type="button" onclick="showAnswer(this)">
@@ -126,7 +141,7 @@
       let hintNum = 1;
       function showAnswer(button) {
         document.getElementById("hint" + hintNum).style.display = "block";
-        if (hintNum > 1 && hintNum < 5) {
+        if ((hintNum > 1 && hintNum < 5) || hintNum == 6) {
           document.getElementById("img" + hintNum).style.display = "block";
         }
         hintNum++;
@@ -164,6 +179,16 @@
         float: right;
         padding-top: 8vw;
         padding-right: 4.6vw;
+      }
+      #img6 {
+        float: right;
+        margin-right: 1vw;
+      }
+      #hint6 {
+        float: left;
+        align-items: center;
+        padding-top: 7vw;
+        padding-left: 1.6vw;
       }
     </style>
   </body>
