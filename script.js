@@ -93,14 +93,18 @@ function hintLeftFunction() {
     document.getElementById("leftPara").innerHTML =
       "Hmmmm....Is there something special about the position of the empty spot in the shelf?";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
-    document.getElementById("leftPara").style.color = "blue";
+    /*document.getElementById("leftPara").style.color = "#085570";*/
     document.getElementById("leftPara").style.fontWeight = "bold";
     index1++;
   } else if (index1 == 1) {
     document.getElementById("leftPara").innerHTML = leftShelfOrigText;
     document.getElementById("hintLeftButton").innerHTML = "Hint";
     document.getElementById("leftPara").style.color = "black";
-    document.getElementById("leftPara").style.fontWeight = "unbold";
+    document.getElementById("leftPara").style.fontWeight = "normal";
+/Text;
+    document.getElementById("hintLeftButton").innerHTML = "Hint";
+    document.getElementById("leftPara").style.color = "black";
+    document.getElementById("leftPara").style.fontWeight = "normal";
     index1--;
   }
 }
