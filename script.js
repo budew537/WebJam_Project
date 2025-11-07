@@ -82,15 +82,15 @@ function toggleVisibility(button) {
       /* document.getElementById("lightPara").style.fontWeight = "bold"; */
 
       document.getElementById("lightPara").innerHTML =
-        "Nice!! You turned off the light!! Let's turn that back on...'.";
+        "Nice!! You turned off the light!! Now let's turn that back on...'.";
 
       document.body.style.backgroundColor = "#0275a2";
 
       setTimeout(() => {
-        document.body.style.backgroundColor = "#eee79d";
+        document.body.style.backgroundColor = "#ccf0fe";
         document.getElementById("lightPara").innerHTML =
           "You get the secret number '666666'. Giving you blessings!";
-      }, 2000);
+      }, 3000);
     }
   }
 }

@@ -8,7 +8,7 @@
 
 /*set background color except the header part*/
 body {
-  background-color: #eee79d;
+  background-color: #ccf0fe;
   padding-bottom: 5vw;
 }
 
@@ -108,7 +108,7 @@ header {
   position: center;
   float: center;
   /*margin-left: 15vw;*/
-  padding-bottom: 5vw;
+  padding-bottom: 1vw;
 }
 
 /*button overall set-up*/
