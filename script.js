@@ -91,7 +91,7 @@ function toggleVisibility(button) {
 function hintLeftFunction() {
   if (index1 == 0) {
     document.getElementById("leftPara").innerHTML =
-      "Hmmmm....Is there something special about the position of the empty spot in the shelf?\nTry mapping it in a coordinate from top to bottom and from left to right.";
+      "The empty spot seems to be the speical one. Try mapping that spot in a coordinate in the shelf <br/>from top to bottom (1 to 4)and from left to right (1 to 4) and see where it locates.";
     document.getElementById("hintLeftButton").innerHTML = "Hide Hint";
     /*document.getElementById("leftPara").style.color = "#085570";*/
     document.getElementById("leftPara").style.fontWeight = "bold";
@@ -108,7 +108,7 @@ function hintLeftFunction() {
 function hintRightFunction() {
   if (index2 == 0) {
     document.getElementById("rightPara").innerHTML =
-      "Maybe all the colors refer to some number...? I should check out the paper on the front drawer.";
+      "Maybe all the colors refer to some number...? I should check out the paper in the Front Drawer to see which number I need.";
     document.getElementById("hintRightButton").innerHTML = "Hide Hint";
     document.getElementById("rightPara").style.fontWeight = "bold";
     index2++;
@@ -123,7 +123,7 @@ function hintRightFunction() {
 function hintOpenDrawerFunction() {
   if (index3 == 0) {
     document.getElementById("openDrawerPara").innerHTML =
-      "Perhaps...try connecting the numbers on the left-handside paper in the order right-handside paper.";
+      "Perhaps...try connecting the numbers in a line on the left paper, using the order provided on the right paper.<br/>Then maybe I will get a figure from the connected lines that resembles a number?";
     document.getElementById("hintOpenDrawerButton").innerHTML = "Hide Hint";
     document.getElementById("openDrawerPara").style.fontWeight = "bold";
     index3++;
@@ -138,7 +138,7 @@ function hintOpenDrawerFunction() {
 function hintPaperFunction() {
   if (index4 == 0) {
     document.getElementById("paperPara").innerHTML =
-      "I should check out the places and objects that are listed on this paper.";
+      "I should check out the places and objects that are listed on this paper. According to the arrows, the order also matters. ";
     document.getElementById("hintPaperButton").innerHTML = "Hide Hint";
     document.getElementById("paperPara").style.fontWeight = "bold";
     index4++;
