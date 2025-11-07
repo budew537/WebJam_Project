@@ -82,7 +82,7 @@ function toggleVisibility(button) {
       /* document.getElementById("lightPara").style.fontWeight = "bold"; */
 
       document.getElementById("lightPara").innerHTML =
-        "Nice!! You turned on the light!! Unfortunately, nothing else happened...";
+        "Nice!! You turned on the light!! You get the secret number'4'.";
     }
   }
 }
@@ -99,11 +99,7 @@ function hintLeftFunction() {
   } else if (index1 == 1) {
     document.getElementById("leftPara").innerHTML = leftShelfOrigText;
     document.getElementById("hintLeftButton").innerHTML = "Hint";
-    document.getElementById("leftPara").style.color = "black";
-    document.getElementById("leftPara").style.fontWeight = "normal";
-/Text;
-    document.getElementById("hintLeftButton").innerHTML = "Hint";
-    document.getElementById("leftPara").style.color = "black";
+    /*document.getElementById("leftPara").style.color = "black";*/
     document.getElementById("leftPara").style.fontWeight = "normal";
     index1--;
   }
